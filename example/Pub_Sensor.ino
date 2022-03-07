@@ -102,10 +102,10 @@ void setup(){
 void loop(){
   char sendData[50] = {'\0'};
   float light_value = analogRead(A0);
-  float volts = light_value * 5.0 / 1024.0;   // 將5V電壓分成 1024等分
-  float amps = volts / 10000.0;      // 電流=電壓/電阻(10K歐姆)
-  float microamps = amps * 1000000;  //得到毫安培
-  float lux = microamps * 2.0;       // 乘以2，得到流明
+  float volts = light_value * 5.0 / 1024.0;  
+  float amps = volts / 10000.0;      
+  float microamps = amps * 1000000;  
+  float lux = microamps * 2.0;
   delay(500);
   float2char(sendData,lux);
   Serial.print("Send data :");
