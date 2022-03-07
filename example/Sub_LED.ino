@@ -11,7 +11,7 @@
 #define IOT_TOPIC       "<student ID>/lab2"
 
 #define DHTTYPE DHT22   // DHT 22  (AM2302)
-#define DHTPIN          
+#define DHTPIN          6
 #define PIN_TX          7
 #define PIN_RX          8
 #define PIN_Light       "A0"
