@@ -11,11 +11,11 @@
 #define IOT_TOPIC       "<student ID>/lab2"
 
 #define DHTTYPE DHT22   // DHT 22  (AM2302)
-#define DHTPIN          6
+#define PIN_Light       "A0"
+#define PIN_LED         3
+#define DHTPIN          5
 #define PIN_TX          7
 #define PIN_RX          8
-#define PIN_Light       "A0"
-#define PIN_LED         4
 
 SoftwareSerial          mySerial(PIN_RX,PIN_TX);
 DFRobot_SIM7000         sim7000(&mySerial);
